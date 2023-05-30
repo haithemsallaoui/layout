@@ -1,0 +1,152 @@
+.section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center ;
+}
+.taksim{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.taksim p{
+    line-height: 1.6;
+    color: gray;
+}
+.section h1{
+    color: aqua;
+}
+.tableau{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.patient{
+    background-color: #00ccb1;
+}
+.doctor{
+    background-color: #3e83e0;
+}
+.clinic{
+    background-color: #1b2735;
+}
+.box{
+    height: 300px;
+    border-radius: 7px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.box p{
+    font-size: 20px;
+}
+select{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+option{
+    color: gray;
+
+}
+.tableau{
+    width: 70%;
+    margin: auto;
+}
+.section{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* ****section3***** */
+.section3{
+    background-color: #dff8f6;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.platform{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.ordor{
+    color: #00b39b;
+    font-weight: 100;
+}
+.ordor p{
+    color: gray;
+}
+.logo{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.card h1{
+    color: #00b39b;
+    font-weight: 100;
+}
+.card p{
+    color: gray;
+}
+.title{
+    transform: translateY(20px);
+}
+
+
+
+
+
+
+@media(max-width:500px) {
+    .taksim{
+        display:grid;
+        grid-template-columns: 100%;
+    }
+    .section{
+        width: 100%;
+     } 
+     .section h1{
+        text-align: center;
+     }
+     .tableau{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    } 
+    .tableau{
+        width: 100%;
+    }
+    .platform{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+
+
